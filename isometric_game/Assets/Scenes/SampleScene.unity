@@ -214,6 +214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 753589029}
   - component: {fileID: 753589028}
+  - component: {fileID: 753589030}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -249,6 +250,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &753589030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753589027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0718178ac289442a2cbcb3937aa963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floors:
+  - {fileID: 898628462}
+  - {fileID: 1465926442}
+  grid: {fileID: 0}
 --- !u!1 &898628458
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +530,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilemapRenderer: {fileID: 0}
   contentOrder: 500
+  minXY: {x: -50, y: -50, z: 0}
+  maxXY: {x: 50, y: 50, z: 0}
+  tilemap: {fileID: 0}
 --- !u!1 &1465926438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,6 +1661,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilemapRenderer: {fileID: 0}
   contentOrder: 300
+  minXY: {x: -50, y: -50, z: 0}
+  maxXY: {x: 50, y: 50, z: 0}
+  tilemap: {fileID: 0}
 --- !u!1 &1920700257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,7 +1739,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920700257}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: -0.39, z: 0}
+  m_LocalPosition: {x: 2.05, y: -0.34, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
